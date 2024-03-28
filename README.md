@@ -1,2 +1,4 @@
 # EmTechG11-InfoSite
-Our team's submission for our "Informational Website" project for the course "Empowerment Technology" in Grade 11, 2019.
+
+This project was done with two other teammates in August 2019 for our "Informational Website" project for our "Empowerment Technology" course in Grade 11.
+This project is being uploaded to GitHub for archive and preservation purposes.
