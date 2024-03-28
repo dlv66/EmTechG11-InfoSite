@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "styles.css" />
+   
+</head>
+<body>
+
+<div class="n">
+<a href="home.html">
+<img src="img\GDN.png" id="title">
+</a>
+</div>
+<div class="nav">
+<div class="dropdown">
+<button class="dropbtn">&nbsp Tech Portfolio &nbsp
+<i class="fa fa-caret-down"></i>
+</button>
+<div class="dropdown-content">
+<a href="History.html">History</a>
+<a href="Types.html">Types</a>
+<a href="Services.html">Services</a>
+<a href="Problems.html">Problems</a>
+<a href="The Future.html">The Future</a>
+<a href="Sources.html">Sources</a>
+</div>
+</div> 
+<a href="contact.html">&nbsp Contact Info &nbsp</a>
+<a href="qna.html">&nbsp FAQ &nbsp</a>
+<a href="teamprofile.html">&nbsp Team Profile &nbsp</a>
+</div>
+<hr>
+
+<div class="top">
+<div id="pictures">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="img\GND.jpg" id="main">
+  <div class="text">Xbox Game Pass. Microsoft's subscription-based progressive downloading gaming service for the Xbox One and PC.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="img\NGN.jpg" id="main">
+  <div class="text">GeForce Now. Nvidia's subscription-based game streaming service for Mac, PC, and Nvidia Shield.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="img\frontpsnow.jpg" id="main">
+  <div class="text">PlayStation Now. Sony Playstation's subscription-based game streaming service for the PS4 and PC</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="img\GSC.jpg" id="main">
+  <div class="text">Google Stadia. Google's upcoming subscription-based game streaming service for virtually every device with a screen.</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+</div>
+<div id="Description">
+  <h2>Description</h2>
+  <p align="center">
+	Game streaming (also known as cloud gaming or gaming-on-demand) is a type of gaming aimed at providing end-users of games with smooth and direct playability across different devices. It has much common with video-on-demand services, but interactive. Where one company executes the media on a server, then the output of the media is sent to the screen or to the local device of the user where the user can control the media using a input device, such as a controller or a mouse-and-keyboard combo. The remote server is doing all the hard work while your computer is receiving video (and audio) streaming and sending input orders.
+  </p>
+</div>
+</div>
+<div class="start">
+<a href="History.html">
+>>Start Here<<
+</a>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(carousel, 0200);
+}
+</script>
+</body>
+</html>
